@@ -150,6 +150,15 @@ public class Printer extends CordovaPlugin {
     } else if (action.equals("printerStatusStopListener")) {
       printerStatusStopListener();
       return true;
+    } else if (action.equals("commitPrinterBuffer")) {
+      commitPrinterBuffer();
+      return true;
+    } else if (action.equals("enterPrinterBuffer")) {
+      enterPrinterBuffer(data.getBoolean(0));
+      return true;
+    } else if (action.equals("exitPrinterBuffer")) {
+      exitPrinterBuffer(data.getBoolean(0));
+      return true;
     }
 
     return false;
