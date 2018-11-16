@@ -61,15 +61,15 @@ module.exports = {
   },
   printerStatusStopListener: function () {
     exec(function () {}, function () {}, "Printer", "printerStatusStopListener", []);
-  }
+  },
 
   commitPrinterBuffer: function () {
     exec(function () {}, function () {}, "Printer", "commitPrinterBuffer", []);
-  }
+  },
 
   enterPrinterBuffer: function (clean) {
     exec(function () {}, function () {}, "Printer", "enterPrinterBuffer", [clean]);
-  }
+  },
 
   exitPrinterBuffer: function (commit) {
     exec(function () {}, function () {}, "Printer", "exitPrinterBuffer", [commit]);
